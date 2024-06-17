@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { GettingMarriedComponent } from './features/getting-married/getting-married.component';
+import { LoveStoryComponent } from './features/love-story/love-story.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, GettingMarriedComponent],
+  imports: [RouterOutlet, GettingMarriedComponent, LoveStoryComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

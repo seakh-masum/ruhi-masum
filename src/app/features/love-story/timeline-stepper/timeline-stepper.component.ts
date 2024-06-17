@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { TimelineCardComponent } from './timeline-card/timeline-card.component';
-import { TimelineStepperComponent } from './timeline-stepper/timeline-stepper.component';
+import { TimelineCardComponent } from '../timeline-card/timeline-card.component';
+import { NgClass } from '@angular/common';
 
 @Component({
-  selector: 'app-love-story',
+  selector: 'app-timeline-stepper',
   standalone: true,
-  imports: [TimelineCardComponent, TimelineStepperComponent],
-  templateUrl: './love-story.component.html',
-  styleUrl: './love-story.component.scss',
+  imports: [TimelineCardComponent, NgClass],
+  templateUrl: './timeline-stepper.component.html',
+  styleUrl: './timeline-stepper.component.scss'
 })
-export class LoveStoryComponent {
+export class TimelineStepperComponent {
   timelineData = [
     {
       title: 'First Meet',

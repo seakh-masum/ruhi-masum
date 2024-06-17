@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <ul class="timeline-both-side">
+      
+      @for (item of timelineData; track item.title; let isOdd=$odd) {
+        <li [ngClass]="{'opposite-side': isOdd}">
+            <div class="border-line"></div>
+            <div class="timeline-description">
+              <app-timeline-card [data]="item" />
+            </div>
+          </li>
+        } @empty {
+        <li>There are no items.</li>
+        }
+    </ul>
+  </div>
+</div>

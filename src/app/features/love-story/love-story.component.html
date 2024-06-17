@@ -1,19 +1,15 @@
-<div class="">
-    <div>
-        <h3 class="text-lg">Masum & Ruhi</h3>
-        <h1 class="text-3xl">Our Love Story</h1>
-    </div>
+<div class="max-w-[850px] mx-auto flex flex-col gap-7 items-center">
+  <div class="flex flex-col justify-center items-center">
+    <h3 class="text-lg">Masum & Ruhi</h3>
+    <h1 class="text-3xl">Our Love Story</h1>
+  </div>
 
-    <div>
-        <img [src]="img" />
-        <div class="text-white">
-            <h1 class="text-2xl">First Meet</h1>
-            <p>Jun 19, 2019</p>
-
-            <p class="text-sm text-slate-300">
-                wonderful serendy has taken Possessonof my entre soul le pray Fem
-            </p>
-        </div>
-    </div>
-
+  <div class="max-w-[800px]">
+    <app-timeline-stepper></app-timeline-stepper>
+      <!-- @for (item of timelineData; track item.title; let e=$even) {
+      <app-timeline-card [data]="item" [isEven]="e" />
+      } @empty {
+      <li>There are no items.</li>
+      } -->
+  </div>
 </div>
