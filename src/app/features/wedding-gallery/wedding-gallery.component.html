@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container flex items-center flex-col p-5">
   <h1 class="text-4xl text-teal-700 text-center mb-5 mt-10">Wedding Gallery</h1>
-  <div class="row">
+  <div class="row mb-3">
     @for (images of galleryImages; track images; let isOdd=$odd) {
     <div class="column">
       @for (image of images; track image; let isOdd=$odd) {
@@ -9,4 +9,10 @@
     </div>
     }
   </div>
+
+  <button
+    class="text-teal-700 px-7 py-1 text-xl border-2 rounded-full border-teal-700 hover:bg-teal-700 hover:text-white"
+  >
+    View More
+  </button>
 </div>

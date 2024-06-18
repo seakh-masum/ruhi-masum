@@ -4,6 +4,7 @@ import { GettingMarriedComponent } from './features/getting-married/getting-marr
 import { LoveStoryComponent } from './features/love-story/love-story.component';
 import { InvitationComponent } from './features/invitation/invitation.component';
 import { WeddingGalleryComponent } from './features/wedding-gallery/wedding-gallery.component';
+import { WeddingRegistryComponent } from './features/wedding-registry/wedding-registry.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { WeddingGalleryComponent } from './features/wedding-gallery/wedding-gall
     LoveStoryComponent,
     InvitationComponent,
     WeddingGalleryComponent,
+    WeddingRegistryComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
