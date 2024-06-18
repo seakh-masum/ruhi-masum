@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { TimelineCardComponent } from './timeline-card/timeline-card.component';
 import { TimelineStepperComponent } from './timeline-stepper/timeline-stepper.component';
 
 @Component({
   selector: 'app-love-story',
   standalone: true,
-  imports: [TimelineCardComponent, TimelineStepperComponent],
+  imports: [TimelineStepperComponent],
   templateUrl: './love-story.component.html',
   styleUrl: './love-story.component.scss',
 })
