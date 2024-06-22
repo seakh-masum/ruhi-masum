@@ -1,24 +1,99 @@
-<div class="container flex items-center flex-col p-5">
-  <h1>Wedding Registry</h1>
-  <p>The best present you possibly give us</p>
+<div class="flex items-center flex-col py-12 px-5 bg-teal-50">
+  <h1 class="text-4xl text-teal-900">Wedding Registry</h1>
+  <p class="text-sm text-slate-500 mt-2">
+    The best present you possibly give us
+  </p>
 
-  <form>
+  <form class="w-96 space-y-4 mt-8" [formGroup]="form">
     <div class="block">
-      <label class="text-slate-800 mb-2">Your Name</label>
+      <label class="input-label">Your Name</label>
       <input
-        class="border-2 border-slate-200 p-2 text-slate-900 rounded-lg"
+        class="input-field"
         placeholder="Enter your name"
+        formControlName="name"
+      />
+    </div>
+    <div class="block">
+      <label class="input-label">Email Address</label>
+      <input
+        class="input-field"
+        placeholder="Enter your email address"
+        formControlName="email"
       />
     </div>
 
     <div class="radio-group">
-      <label>Attending</label>
-      <div>
-        <p>Yes, I'll be there</p>
-        <p>Sorry, I Can't Come</p>
+      <label class="input-label">Attending</label>
+      <div class="grid grid-cols-2 gap-2">
+        <label for="yes" class="radio__button">
+          <span>
+            <span class="radio__heading">Yes,</span>
+            <span class="radio__desc">I will be there</span>
+          </span>
+          <input
+            type="radio"
+            name="isAttending"
+            id="yes"
+            value="1"
+            class="radio__input"
+            formControlName="isAttending"
+          />
+          <span aria-hidden="true" class="radio__wrapper-main">
+            <span class="radio__wrapper-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="radio__icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </span>
+        </label>
+        <label for="no" class="radio__button">
+          <span>
+            <span class="radio__heading">Sorry,</span>
+            <span class="radio__desc">I can't come</span>
+          </span>
+          <input
+            type="radio"
+            name="isAttending"
+            id="no"
+            value="0"
+            class="radio__input"
+            checked
+            formControlName="isAttending"
+          />
+          <span aria-hidden="true" class="radio__wrapper-main">
+            <span class="radio__wrapper-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="radio__icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </span>
+        </label>
       </div>
     </div>
 
-    <button>Confirm Registry</button>
+    <button
+      class="px-7 py-1 text-xl font-semibold rounded-full bg-teal-500 text-white h-14 w-full mt-8 shadow-xl shadow-teal-200"
+      (click)="onSubmit()"
+    >
+      Confirm Registry
+    </button>
   </form>
 </div>

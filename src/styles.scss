@@ -7,3 +7,45 @@
   max-width: 950px;
   margin: 0 auto;
 }
+
+.input {
+  &-field {
+    @apply border border-teal-100 p-2 text-slate-900 rounded-lg w-full focus:shadow-md outline-teal-500;
+  }
+  &-label {
+    @apply text-slate-700 mb-1 block text-sm;
+  }
+}
+
+.radio {
+  &__button {
+    @apply relative flex flex-col bg-white px-5 py-2 rounded-lg border border-teal-100 cursor-pointer;
+  }
+  &__heading {
+    @apply text-lg font-bold text-gray-900 mr-1;
+  }
+  &__desc {
+    @apply text-sm font-semibold text-gray-500;
+  }
+  &__wrapper {
+    &-main {
+      @apply hidden absolute inset-0 border-2 border-teal-500 bg-teal-200 bg-opacity-10 rounded-lg;
+    }
+
+    &-icon {
+      @apply absolute top-2.5 right-2 h-5 w-5 inline-flex items-center justify-center rounded-full bg-teal-200;
+    }
+  }
+
+  &__icon {
+    @apply h-4 w-4 text-teal-600;
+  }
+
+  &__input {
+    @apply absolute h-0 w-0 appearance-none;
+  }
+}
+
+input[type="radio"]:checked + span {
+  display: block;
+}
