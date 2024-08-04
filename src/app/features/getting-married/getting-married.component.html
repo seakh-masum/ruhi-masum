@@ -1,13 +1,19 @@
 <div class="flex flex-col gap-8 justify-center items-center bg-white pb-20">
   <div class="z-20 relative flex flex-row items-center justify-center -mt-32">
-    <img class="w-52 h-72 border-8 border-white rounded-xl" [src]="groomUrl" />
-    <i>love</i>
-    <img class="w-52 h-72 border-8 border-white rounded-xl" [src]="brideUrl" />
+    <img
+      class="w-full sm:w-52 h-72 border-8 border-white rounded-xl -mr-3"
+      [src]="groomUrl"
+    />
+    <img src="/icons/two-hearts.svg" class="w-10 z-20" />
+    <img
+      class="w-full sm:w-52 h-72 border-8 border-white rounded-xl -ml-3"
+      [src]="brideUrl"
+    />
   </div>
 
   <div class="max-w-[500px] flex flex-col gap-2 justify-center items-center">
     <p class="text-xl">We are</p>
-    <p class="text-4xl text-teal-800">Getting Married</p>
+    <p class="text-4xl text-rose-800">Getting Married</p>
     <p class="text-sm text-slate-400 text-center">{{ quote }}</p>
   </div>
 </div>

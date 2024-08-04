@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("./fonts/icomoon.eot?q9njqy");
-  src: url("./fonts/icomoon.eot?q9njqy#iefix") format("embedded-opentype"),
-    url("./fonts/icomoon.ttf?q9njqy") format("truetype"),
-    url("./fonts/icomoon.woff?q9njqy") format("woff"),
-    url("./fonts/icomoon.svg?q9njqy#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?kxv6u3");
+  src: url("fonts/icomoon.eot?kxv6u3#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?kxv6u3") format("truetype"),
+    url("fonts/icomoon.woff?kxv6u3") format("woff"),
+    url("fonts/icomoon.svg?kxv6u3#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-heart-arrow .path1:before {
+  content: "\e904";
+  color: rgb(66, 137, 193);
+}
+.icon-heart-arrow .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(231, 90, 112);
+}
+.icon-heart-arrow .path3:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(93, 173, 236);
+}
+.icon-heart-arrow .path4:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(93, 173, 236);
+}
+.icon-heart-arrow .path5:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(42, 103, 151);
+}
+.icon-heart-arrow .path6:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(218, 47, 71);
+}
+.icon-two-hearts .path1:before {
+  content: "\e90a";
+  color: rgb(242, 171, 186);
+}
+.icon-two-hearts .path2:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(231, 90, 112);
+}
 .icon-heart:before {
   content: "\e900";
 }
