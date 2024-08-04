@@ -1,0 +1,26 @@
+<swiper-container
+  #swiper
+  class="swiper"
+  pagination="true"
+  autoplay="true"
+  [breakpoints]="breakPoints"
+>
+  @for (slide of slides; track slide; let i = $index) {
+  <swiper-slide>
+    <img class="rounded-xl shadow-lg" [src]="slide" alt="Image {{ i + 1 }}" />
+  </swiper-slide>
+  }
+</swiper-container>
+
+<!-- <owl-carousel-o [options]="customOptions">
+  @for (slide of slides; track slide; let i = $index) {
+  <ng-template carouselSlide>
+    <img
+      height="200px"
+      class="rounded-xl"
+      [src]="slide"
+      alt="Image {{ i + 1 }}"
+    />
+  </ng-template>
+  }
+</owl-carousel-o> -->

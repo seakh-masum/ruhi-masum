@@ -1,4 +1,16 @@
-.hero-section  {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-    background: rgba(3, 172, 240, 0.5);
+.hero-section {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+  &::before {
+    content: "";
+    background-image: url("https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpZGUlMjBhbmQlMjBncm9vbXxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
