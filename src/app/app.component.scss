@@ -3,7 +3,8 @@
 
   &::before {
     content: "";
-    background-image: url("https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpZGUlMjBhbmQlMjBncm9vbXxlbnwwfHwwfHx8MA%3D%3D");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+      url(https://res.cloudinary.com/ruhi-birthday/image/upload/v1722844793/masum-ruhi/IMG_20211211_154834_nvzpqq.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
