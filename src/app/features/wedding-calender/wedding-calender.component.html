@@ -1,0 +1,17 @@
+<div class="p-5">
+  <div class="grid grid-cols-7 gap-2">
+    @for (item of weekdays; track item;) {
+    <p class="font-bold">{{ item }}</p>
+    }
+  </div>
+  <div class="grid grid-cols-7 gap-2 mt-3">
+    @for (item of dates; track item;) {
+    <div class="relative">
+      @if(item == 15) {
+      <img src="/icons/heart-outline.svg" class="absolute heart-img" />
+      }
+      <p>{{ item }}</p>
+    </div>
+    }
+  </div>
+</div>

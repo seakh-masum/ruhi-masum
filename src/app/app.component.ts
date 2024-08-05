@@ -6,6 +6,7 @@ import { InvitationComponent } from './features/invitation/invitation.component'
 import { WeddingGalleryComponent } from './features/wedding-gallery/wedding-gallery.component';
 import { WeddingRegistryComponent } from './features/wedding-registry/wedding-registry.component';
 import { CountdownComponent } from './features/countdown/countdown.component';
+import { WeddingCalenderComponent } from './features/wedding-calender/wedding-calender.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { CountdownComponent } from './features/countdown/countdown.component';
     WeddingGalleryComponent,
     WeddingRegistryComponent,
     CountdownComponent,
+    WeddingCalenderComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
