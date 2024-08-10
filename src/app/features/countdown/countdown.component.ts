@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CounterDirective } from '../../shared/counter/counter.directive';
 
 @Component({
   selector: 'app-countdown',
   standalone: true,
-  imports: [],
+  imports: [CounterDirective],
   templateUrl: './countdown.component.html',
   styleUrl: './countdown.component.scss',
 })

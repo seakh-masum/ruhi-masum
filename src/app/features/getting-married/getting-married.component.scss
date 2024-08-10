@@ -1,0 +1,44 @@
+.animation-groom {
+  animation: slide-right 3s ease-in-out forwards;
+}
+
+.animation-bride {
+  animation: slide-left 3s ease-in-out forwards;
+}
+
+.animation-love-icon {
+  animation-delay: 3s;
+  animation: bounce 2s ease-in-out forwards;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); /* Start from below the container */
+  }
+  50% {
+    transform: translateY(-50%); /* Move up above the center of the container */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at the original position */
+  }
+}
